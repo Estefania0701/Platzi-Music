@@ -14,7 +14,7 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
-    <!-- Tema: texto rojo -->
+    <!-- Tema: texto verde -->
     <style name="AppTheme.Green" parent="AppTheme">
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:background">@color/red</item>
