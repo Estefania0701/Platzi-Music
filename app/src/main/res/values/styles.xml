@@ -9,7 +9,7 @@
 
     <!-- Tema: texto rojo -->
     <style name="AppTheme.Red" parent="AppTheme">
-        <item name="android:textColor">#FFFF0000</item>
+        <item name="android:textColor">#FFFF00FF</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
     </style>
@@ -17,13 +17,24 @@
     <!-- Tema: texto rojo -->
     <style name="AppTheme.Green" parent="AppTheme">
         <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:background">#FFFf0000</item>
+        <item name="android:background">@color/red</item>
     </style>
 
     <!-- Estilo para username y password-->
     <style name="AppTheme.EditTextStyle" parent="AppTheme">
         <item name="android:textSize">16sp</item>
         <item name="android:drawablePadding">12dp</item>
+        <item name="android:layout_margin">@dimen/margin_default</item>
     </style>
+
+    <!-- ORDEN DE APLICACIÓN
+    Si Android encuentra un tema lo aplica, pero si un elemento tiene un estilo
+    aplicará el estilo, pero si un elemento tiene un atributo único interno lo
+    va a referenciar primero
+    Por ej., si defino un fondo en el tema, pero un elemento como el texto tiene
+    su propio fondo, va a predominar este sobre el fondo del tema
+
+    elemento -> estilo -> tema
+    -->
 
 </resources>
