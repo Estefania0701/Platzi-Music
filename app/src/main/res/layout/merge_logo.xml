@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Su borde derecho con el borde derecho del padre
+     Su borde izquierdo con el izquierdo del padre
+     Su borde superior con el superior del padre-->
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
+        android:src="@drawable/logo"/>
+
+    <!-- Cuando tengamos un include o un merge, el tema donde incluyamos o
+    el estilo donde incluyamos nuestros layouts va a afectar al merge o al
+    include layout que estamos utilizando. Es decir, en una pantalla donde
+    el backgroud sea verde, el elemento que estamos agregango con include
+    se verá verde, y en una pantalla donde tengamos un background rojo el
+    elemento se verá rojo Los estilos se verán afectados de acuerdo a donde
+    se incluyan, pero puede servir para poder agregar un conjunto de elementos
+    que ya estaban definidos o estilizados
+
+    Es beneficioso a largo plazo, porque elementos como la barra de búsqueda
+    o un botón para comprar pueden ser solamente referenciados y tenerlos
+    definidos una sola vez
+
+    Es importante tener esto en el proyecto para poder repetir o replicar
+    pantallas ya definidas o con estilos.
+
+    La diferencia es que include va a jalar todos los elementos que ya tengo
+    en el layout, mientras que merge los agregará como si fueran elementos
+    presentes en el layout
+
+    Las ventajas y desventajas son cómo se va a generar un árbol jerárquico
+    entre vistas y el performance a corto y largo plazo de la aplicación-->
+</merge>
