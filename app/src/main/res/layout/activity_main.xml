@@ -5,6 +5,9 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <!-- Su borde derecho con el borde derecho del padre
+     Su borde izquierdo con el izquierdo del padre
+     Su borde superior con el superior del padre-->
     <ImageView
         android:id="@+id/ivLoginLogo"
         android:layout_width="160dp"
@@ -14,6 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Su borde derecho con el borde derecho del padre
+     Su borde izquierdo con el izquierdo del padre
+     Su borde superior con el inferior del logo-->
     <EditText
         android:id="@+id/etLoginUsername"
         android:layout_width="0dp"
@@ -26,6 +32,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
 
+    <!-- Su borde derecho con el borde derecho del padre
+    Su borde izquierdo con el izquierdo del padre
+    Su borde superior con el inferior del et usuario-->
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
@@ -38,13 +47,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etLoginUsername" />
 
+    <!-- Su borde inferior con el inferior del padre
+    Su borde derecho con el borde derecho del padre
+    Su borde izquierdo con el izquierdo del padre-->
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         android:background="@color/colorPrimary"
         android:text="@string/button_login"
-        android:layout_margin="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
